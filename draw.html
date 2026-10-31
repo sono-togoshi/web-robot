@@ -197,9 +197,12 @@ p_image_path: imagePath
 
         if (rpcError) throw rpcError;
 
-        status.textContent = "ろぼっとまちにはいったよ！";
+status.textContent = "ろぼっとまちにはいったよ！";
 uploadButton.disabled = true;
 
+setTimeout(() => {
+    location.href = "index.html";
+}, 1500);
     } catch (error) {
         console.error(error);
         status.textContent =
